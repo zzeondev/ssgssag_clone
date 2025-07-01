@@ -10,7 +10,7 @@
   height: 71px;
   background-color: #fff;
 }
-.layout {
+.header_layout {
   display: flex;
   align-items: center;
   justify-content: space-between;

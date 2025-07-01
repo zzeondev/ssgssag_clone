@@ -1,36 +1,35 @@
 .banner {
   position: relative;
 }
-.layout {
-  position: relative;
+.banner_layout {
 }
 .banner_wrap {
-  position: relative;
   padding-top: 40px;
+  position: relative;
 }
 .banner_slide {
   display: flex;
-  align-items: center;
   gap: 82px;
 }
 .banner_slide_item {
-  position: relative;
   display: block;
   overflow: hidden;
-  width: 638px;
-  height: 345px;
-  background-color: red;
+  width: 100%;
+  max-width: 640px;
+
+  height: 320px;
+  border-radius: 16px;
 }
 
 .banner_slide_item img {
   /* 이미지를 보기좋게 비율유지하면서 채워서 보이기 */
+
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-/* .banner_slide_prev {
+.banner_slide_prev {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,12 +44,6 @@
 
   width: 48px;
   height: 48px;
-  background-color: rgba(255, 255, 255, 0.5);
-
-  cursor: pointer;
-
-  transform: translateY(-50%) translateX(-50%);
-  border-radius: 24px;
 }
 
 .banner_slide_prev img {
@@ -72,10 +65,4 @@
 
   width: 48px;
   height: 48px;
-  background-color: rgba(255, 255, 255, 0.5);
-
-  cursor: pointer;
-
-  transform: translateY(-50%) translateX(50%);
-  border-radius: 50%;
-} */
+}
