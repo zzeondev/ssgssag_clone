@@ -2,22 +2,45 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>슥삭 | 대학생 대외활동 공모전</title>
 
+    <!-- 최신웹브라우저가 아닌 경우 인터넷익스프롤러라면 엣지로 보여줌 (엣지를 랜더링 해라) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- 파비콘 이미지 넣기 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>슥삭 | 대학생 대외활동·공모전·인턴·교육 추천 공고</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 기본 css 3개-->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/layout.css" />
+
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- banner 관련 -->
     <link rel="stylesheet" href="css/banner.css" />
+    <script src="js/banner.js"></script>
   </head>
 
   <body>
     <!-- 영역구분 : 내용과 바탕 -->
     <div class="wrap">
-      <!-- 영역구분 : 상단 -->
+      <!-- Start 상단 -->
       <header class="header">
         <!-- 레이아웃용 -->
-        <div class="header_layout">
+        <div class="layout">
           <!-- 상단 -->
           <div class="header_left">
             <!-- 로고 영역 -->
@@ -48,62 +71,80 @@
           </div>
         </div>
       </header>
+      <!-- End 상단 -->
       <!-- 모바일 : 상단 -->
       <div class="mobile_header"></div>
       <!-- 영역구분 : 내용 -->
       <main class="main">
-        <!-- 배너 -->
+        <!-- Start 슬라이드 배너 -->
         <div class="banner">
-          <div class="banner_layout">
-            <!-- 배너 슬라이드 -->
-            <div class="banner_wrap">
-              <div class="banner_slide">
-                <a href="#" class="banner_slide_item">
-                  <img src="images/banner_1.png" alt="" />
-                </a>
-
-                <a href="#" class="banner_slide_item">
-                  <img src="images/banner_2.png" alt="" />
-                </a>
-
-                <a href="#" class="banner_slide_item">
-                  <img src="images/banner_3.png" alt="" />
-                </a>
-
-                <a href="#" class="banner_slide_item">
-                  <img src="images/banner_4.png" alt="" />
-                </a>
-
-                <!-- 배너 슬라이드 -->
+          <!-- 배너 슬라이드 -->
+          <div class="banner_wrap">
+            <!-- Swiper -->
+            <div class="swiper sw_banner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  1
+                  <!-- <a href="#" class="banner_slide_item"
+                    >1
+                    <img src="images/banner_1.png" alt="" />
+                  </a> -->
+                </div>
+                <div class="swiper-slide">
+                  2
+                  <!-- <a href="#" class="banner_slide_item">
+                    <img src="images/banner_2.png" alt="" />
+                  </a> -->
+                </div>
+                <div class="swiper-slide">
+                  3
+                  <!-- <a href="#" class="banner_slide_item">
+                    <img src="images/banner_3.png" alt="" />
+                  </a> -->
+                </div>
+                <div class="swiper-slide">
+                  4
+                  <!-- <a href="#" class="banner_slide_item">
+                    <img src="images/banner_4.png" alt="" />
+                  </a> -->
+                </div>
               </div>
-              <!-- 좌측이동 버튼 -->
-              <button class="banner_slide_prev">
-                <img src="images/slider_arrow.svg" alt="이전페이지" />
-              </button>
-              <!-- 우측이동 버튼 -->
-              <button class="banner_slide_next">
-                <img src="images/slider_arrow.svg" alt="다음페이지" />
-              </button>
-              <!-- 페이지네이션 -->
-              <div class="banner_slide_pg">페이지네이션</div>
             </div>
+            <!-- 배너 슬라이드 -->
+
+            <!-- 좌측이동 버튼 -->
+            <button class="banner_slide_prev">
+              <img src="images/slider_arrow.svg" alt="이전페이지" />
+            </button>
+            <!-- 우측이동 버튼 -->
+            <button class="banner_slide_next">
+              <img src="images/slider_arrow.svg" alt="다음페이지" />
+            </button>
+            <!-- 페이지네이션 -->
+            <div class="banner_slide_pg">페이지네이션</div>
           </div>
         </div>
-        <!-- 메뉴 -->
-        <div></div>
-        <!-- 공고 -->
-        <div></div>
-        <!-- 요즘 핫한 공고 -->
-        <div></div>
-        <!-- 방금 게시된 공고 -->
-        <div></div>
-        <!-- 설치 안내 -->
-        <div></div>
+        <!-- End 슬라이드 배너 -->
+
+        <!-- Start 카테고리 -->
+        <div class="category"></div>
+        <!-- End 카테고리 -->
+        <!-- Start 공고 -->
+        <div class="notice"></div>
+        <!-- End 공고 -->
+        <!-- Start 요즘 핫한 공고 -->
+        <div class="hotnews"></div>
+        <!-- End 요즘 핫한 공고 -->
+        <!-- Start 방금 게시된 공고 -->
+        <div class="recent"></div>
+        <!-- End 방금 게시된 공고 -->
+        <!-- Start 앱 설치 안내 -->
+        <div class="appguid"></div>
+        <!-- End 앱 설치 안내 -->
       </main>
-      <!-- 영역구분 : 하단 -->
+      <!-- Start 하단 -->
       <footer class="footer"></footer>
-      <!-- 모바일 : 하단 -->
-      <div class="mobile_footer"></div>
+      <!-- End 하단 -->
     </div>
   </body>
 </html>
