@@ -33,6 +33,11 @@
     <link rel="stylesheet" href="css/banner.css" />
     <script src="js/banner.js"></script>
   </head>
+  <!-- category 관련 -->
+  <link rel="stylesheet" href="css/category.css" />
+
+  <!-- notice 관련 -->
+  <link rel="stylesheet" href="css/notice.css" />
 
   <body>
     <!-- 영역구분 : 내용과 바탕 -->
@@ -127,20 +132,67 @@
         <div class="category">
           <div class="category_wrap">
             <div class="category_list">
-              <li><button class="category_focus">대외활동</button></li>
-              <!-- <a href="">대외활동</a> -->
-
-              <div class="category_button">공모전</div>
-
-              <div class="category_button">인턴십</div>
-
-              <div class="category_button">교육·강연</div>
+              <ul>
+                <li>
+                  <button class="category_button">
+                    <div class="icon_wrapper">
+                      <img src="images/ic_activity.png" alt="대외활동" />
+                    </div>
+                    <div class="category_label">대외활동</div>
+                    <span class="badge">HOT</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="category_button">
+                    <div class="icon_wrapper">
+                      <img src="images/ic_contest.png" alt="공모전" />
+                    </div>
+                    <div class="category_label">공모전</div>
+                  </button>
+                </li>
+                <li>
+                  <button class="category_button">
+                    <div class="icon_wrapper">
+                      <img src="images/ic_internship.png" alt="인턴십" />
+                    </div>
+                    <div class="category_label">인턴십</div>
+                  </button>
+                </li>
+                <li>
+                  <button class="category_button">
+                    <div class="icon_wrapper">
+                      <img src="images/ic_education.png" alt="교육·강연" />
+                    </div>
+                    <div class="category_label">교육·강연</div>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <!-- End 카테고리 -->
         <!-- Start 공고 -->
-        <div class="notice"></div>
+        <div class="notice">
+          <div class="layout">
+            <!-- 상단 -->
+            <div class="notice_top">
+              <h2 class="title">슥삭이 콕 집은 공고</h2>
+            </div>
+
+            <!-- 하단 -->
+            <div class="notice_bottom">
+              <div class="notice_bottom_wrap">
+                <div>이미지</div>
+                <div>대외활동</div>
+                <div>스파르타코딩클럽</div>
+                <div>D-7</div>
+              </div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
         <!-- End 공고 -->
         <!-- Start 요즘 핫한 공고 -->
         <div class="hotnews"></div>
