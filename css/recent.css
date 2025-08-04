@@ -1,0 +1,85 @@
+.recent {
+  position: relative;
+  height: 882px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+.recent_layout {
+  align-items: center;
+  margin: 0px auto;
+  width: 1024px;
+  padding: 56px 16px;
+}
+.recent_title {
+  display: flex;
+  gap: 6px;
+
+  margin-left: 8px;
+  padding-bottom: 25px;
+  font-size: 24px;
+  color: #1c1c1c;
+}
+.recent_title_span {
+  color: #5a6af9;
+}
+.recent_bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 👉 4열 */
+  grid-template-rows: repeat(2, auto); /* 👉 2행 (자동 높이) */
+  gap: 8px 8px; /* 👉 행과 열 간격 */
+  margin: 0;
+  padding: 0;
+}
+.recent_bottom_wrap {
+  padding: 8px 8px 12px;
+  width: 242px;
+  height: 351px;
+}
+.recent_info {
+  padding-bottom: 12px;
+  border: #e5e7eb;
+}
+.recent_info img {
+  width: 224px;
+  height: 224px;
+  object-fit: cover;
+
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+.recent_bottom_text {
+  margin: 0 4px;
+  gap: 9px;
+}
+.recent_text_group {
+}
+.recent_bottom_tag {
+  width: fit-content;
+  height: 21px;
+  font-size: 11px;
+  padding: 5px;
+  background: #fff6f1;
+  color: #fd8f4c;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.recent_bottom_local {
+  width: fit-content;
+  color: #777;
+  background-color: #f2f2f2;
+  padding: 5px;
+  font-size: 11px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.recent_bottom_title {
+  margin: 0;
+  font-size: 15px;
+  color: #444;
+  font-weight: 500;
+}
+.recent_dday {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
